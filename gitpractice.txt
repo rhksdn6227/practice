@@ -3,3 +3,4 @@ git을 연습하자
 누군가 또 수정했다고 가정하고 pull 해보자~
 merge 연습용 로컬 수정
 merge practice
+branch1에서 수정
