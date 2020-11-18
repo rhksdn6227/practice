@@ -3,10 +3,10 @@ import tweepy
 import csv
 import os
 
-consumer_key = ""
-consumer_secret = ""
-access_token = ""
-access_token_secret = ""
+consumer_key = "XrVeMa06TGuuIr5oR1YLbhOJt"
+consumer_secret = "sNTpEOfsMQIztueCeF3TIu6mKq8c1B8IafVKBdwYbza7gWUuGO"
+access_token = "1315912419659534338-Qhbz9MwmsaZJfTlvHeF5v1PYhHqRDY"
+access_token_secret = "EBDnbeVqmsX09IMuUF78lOfrhomEVYGFakcKEQRf5JZD1"
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -14,7 +14,7 @@ api = tweepy.API(auth)
 
 location = "%s,%s,%s" % ("35.95", "128.25", "1000km")
 
-keyword = "유출확인 OR 유출조회 OR 회생작업 OR 여권위조 OR 운전면허증위조"                                      # OR 로 검색어 묶어줌, 검색어 5개(반드시 OR 대문자로)
+keyword = "유출확인 OR 유출조회 OR 회생작업 OR 여권위조 OR 운전면허증위조"
 
 #저장할 csv 파일 오픈
 f = open('other_spam.csv', 'wt', encoding='utf-8')
